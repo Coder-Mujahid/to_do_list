@@ -27,14 +27,14 @@ function btn() {
 
     const reglist = document.getElementById('reglist')
     const li = document.createElement('li')
-    li.innerHTML = ` <li class=" flex gap-5 w-full p-3 items-center bg-gray-400 rounded shadow-md mb-3">
+    li.innerHTML = ` <li class=" md:flex flex-wrap gap-5 w-auto items-center p-3 bg-gray-400 rounded shadow-md mb-3">
                         <h2 class="text-lg font-semibold capitalize">${sl}</h2>
                         <aside class="w-12 rounded-2xl">
                             <img class="" src="img/mujahid.png" alt="img">
                         </aside>
                         <div>
                         <h2 class="text-lg font-semibold capitalize">${namevalue}</h2>
-                        <h2 class="text-base font-semibold capitalize">${emailvalue}</h2>
+                        <h2 class="text-base font-normal md:font-semibold capitalize pr-5">${emailvalue}</h2>
                         </div>
                         <div class="">
                             <h2 class="text-lg font-semibold capitalize">date</h2>
