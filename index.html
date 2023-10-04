@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.8.3/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>user registration form</title>
+</head>
+<body>
+    <section>
+        <h2 class="text-5xl font-semibold capitalize text-center py-10 px-4 border-b-2 border-slate-500">welcome to registration page</h2>
+        <div class="bg-slate-200 md:flex justify-center gap-10 p-5 py-20">
+
+            <div class="p-4 border-2 border-slate-500 flex flex-col bg-slate-100 rounded mb-5 ">
+                <h2 class=" text-xl font-semibold capitalize text-center flex justify-center gap-1"><i class='bx bxs-registered text-2xl' ></i>registration form</h2>
+
+                <h2 class=" text-xl font-semibold capitalize m-2">your name</h2>
+                <i class='bx bxs-user shadow-sm bg-white md:px-2 py-2 text-lg rounded-lg md:w-full'><input id="name" class="ml-4 font-sans font-semibold placeholder:font-sansplaceholder-slate-500 outline-none" type="text" placeholder="Inter your name"></i>
+
+                <h2 class=" text-xl font-semibold capitalize m-2">your email</h2>
+                <i class='bx bxs-envelope shadow-sm bg-white md:px-2 py-2 text-lg rounded-lg md:w-full'><input id="email" class=" font-sans font-semibold placeholder:font-sans placeholder-slate-500 outline-none" type="email" placeholder="Inter your email"></i>
+
+                <!-- <h2 class=" text-xl font-semibold capitalize m-2">passport photo</h2>
+                <input id="img" type="file" class="file-input shadow-sm w-full max-w-xs outline-none placeholder:text-black placeholder-slate-500" /> -->
+
+                <h2 class=" text-xl font-semibold capitalize m-2">your password</h2>
+                <i class='bx bx-key bg-white px-2 md:px-2 py-2 md:text-lg shadow-sm rounded-lg mdw-full'><input id="password" class="ml-4 font-sans font-semibold placeholder:font-sans placeholder-slate-500 text-lg outline-none" type="password" placeholder="Inter your password"></i>
+                <br>
+
+                <button onclick="btn()" class="btn btn-ghost bg-slate-400 text-black font-semibold my-3 w-full">register</button>
+
+            </div>
+                
+            <div class="p-3 border-2 rounded border-slate-500 bg-slate-100">
+                    <h2 class=" text-xl font-semibold capitalize text-center md:flex justify-center gap-1 md:px-24"><i class='bx bxs-registered text-2xl' ></i>registration list</h2>
+
+                    <ul id="reglist">
+                        
+                    </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
