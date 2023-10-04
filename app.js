@@ -38,12 +38,17 @@ function btn() {
                         </div>
                         <div class="">
                             <h2 class="text-lg font-semibold capitalize">date</h2>
-                            <h2 class="text-base font-semibold capitalize">05/10/2023</h2>
+                            <h2 class="text-base font-semibold capitalize">${today}</h2>
                         </div>
                     </li>`
     reglist.appendChild(li)
     sl++;
 
-
-
 }
+// catching date
+var today = new Date(); 
+var dd = String(today.getDate()).padStart(2, '0'); 
+var mm = String(today.getMonth() + 1).padStart(2, '0');
+var yyyy = today.getFullYear(); 
+today = mm + '/' + dd + '/' + yyyy; document.write(today);
+console.log(today);
